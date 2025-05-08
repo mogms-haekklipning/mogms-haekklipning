@@ -6,24 +6,31 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const slides = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&h=600&q=80",
-    alt: "Velplejet hæk",
-    title: "Perfekt hækklipning",
-    description: "Få en flot og velholdt hæk til din have",
+    image: "/lovable-uploads/6ece2c27-eff0-4ea1-b89f-e1716f167b14.png",
+    alt: "M&M Hækklipning team",
+    title: "Professionel hækklipning",
+    description: "Vi sørger for at din hæk bliver klippet skarp, så den ligner en milliard",
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&h=600&q=80",
-    alt: "Havearbejde",
-    title: "Professionel service",
-    description: "Vi leverer kvalitetsarbejde i hele området",
+    image: "/lovable-uploads/30899dc4-9309-4f00-a0dd-aec08c69c14c.png",
+    alt: "M&M Hækklipning i arbejde",
+    title: "Erfarne hækklippere",
+    description: "Med solid erfaring går vi op i at levere et skarpt og grundigt resultat hver gang",
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&h=600&q=80",
-    alt: "Smuk have",
+    image: "/lovable-uploads/18f3acd1-3743-419e-8130-b7bb28243b42.png",
+    alt: "Hækklipning i gang",
+    title: "Kvalitet og service",
+    description: "Vi klipper i ugerne 20-35 med fokus på præcision og omhu",
+  },
+  {
+    id: 4,
+    image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&h=600&q=80",
+    alt: "Velplejet hæk",
     title: "Gør din have smuk",
-    description: "Løft udseendet på din have med vores service",
+    description: "Løft udseendet på din have med vores professionelle service",
   }
 ];
 

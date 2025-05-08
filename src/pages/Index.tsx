@@ -27,12 +27,31 @@ const Index = () => {
 
   const benefits = [
     "Konkurrencedygtige priser",
-    "Grundig oprydning efter arbejdet",
-    "Fleksible tidspunkter",
-    "Erfarne hækklippere",
-    "Professionelt udstyr",
-    "Hurtig og effektiv service"
+    "Bortskaffelse af hækaffald (+199kr)",
+    "Klipning i ugerne 20-35",
+    "10% rabat hvis du skaffer en ny kunde",
+    "Tilfredshedsgaranti",
+    "Prisgaranti"
   ];
+
+  const offerBox = () => (
+    <div className="bg-white p-8 rounded-lg shadow-xl border-2 border-garden-medium-green max-w-md mx-auto mt-8 mb-12">
+      <div className="text-center">
+        <div className="bg-yellow-300 text-garden-dark-green font-bold py-2 px-4 rounded-full inline-block mb-4">
+          OPSTARTSTILBUD
+        </div>
+        <h3 className="text-2xl font-bold text-garden-dark-green mb-4">Book os nu!</h3>
+        <p className="mb-4">Send venligst en mail med følgende oplysninger:</p>
+        <ul className="text-left list-disc list-inside mb-6">
+          <li>Din adresse</li>
+          <li>Eventuelle ønsker for hækklipningen</li>
+        </ul>
+        <Link to="/kontakt" className="cta-button inline-block">
+          Kontakt os i dag
+        </Link>
+      </div>
+    </div>
+  );
 
   return (
     <div>
@@ -44,13 +63,48 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="section-title">Professionel hækklipning</h2>
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg text-gray-700 mb-4">
               M&M's Hækklipning tilbyder professionel hækklipning med fokus på kvalitet og service til markedets bedste priser.
-              Vi sørger for at din have altid ser velplejet og indbydende ud.
+            </p>
+            <p className="text-lg text-gray-700 mb-8">
+              Hækklipningssæsonen begynder snart. Lad os klippe din hæk skarp, så den ligner en milliard.
             </p>
             <Link to="/kontakt" className="cta-button inline-block">
               Kontakt os i dag
             </Link>
+          </div>
+          
+          {offerBox()}
+        </div>
+      </section>
+      
+      {/* Team Section */}
+      <section className="py-16 bg-garden-light-green/20">
+        <div className="container mx-auto px-4">
+          <h2 className="section-title text-center mb-12">Mød vores team</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <img 
+                src="/lovable-uploads/6ece2c27-eff0-4ea1-b89f-e1716f167b14.png"
+                alt="Lasse og Casper - M&M's Hækklipning" 
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-garden-dark-green mb-2">Lasse Maagaard & Casper Maigaard</h3>
+                <p className="text-gray-600">Vi er engagerede unge, der starter på studie efter sommeren. Vi bruger sommeren på at klippe din hæk med stor omhu og præcision.</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <img 
+                src="/lovable-uploads/032ca28e-bdf6-4cb5-b8a5-57da19275d8d.png"
+                alt="Vores arbejde" 
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-garden-dark-green mb-2">Vores arbejde</h3>
+                <p className="text-gray-600">Vi har solid erfaring med hækklipning og går op i at levere et skarpt og grundigt resultat hver gang. Derfor tilbyder vi hækklipning af høj kvalitet til markedets bedste priser.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -81,7 +135,7 @@ const Index = () => {
       <section className="py-16 bg-garden-dark-green text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">Hvorfor vælge os?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">Vi tilbyder</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-center space-x-3 p-4 bg-garden-medium-green/20 rounded-lg">

@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,13 +15,26 @@ const Footer = () => {
             <p className="mt-4 text-gray-600 max-w-md">
               Vi tilbyder professionel hækklipning med fokus på kvalitet og service til markedets bedste priser.
             </p>
+            <div className="mt-4">
+              <p className="text-gray-600">Lasse Maagaard & Casper Maigaard</p>
+            </div>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold text-garden-dark-green mb-4">Kontakt</h3>
-            <address className="not-italic text-gray-600">
-              <p>Email: info@mmhaekklipning.dk</p>
-              <p>Telefon: +45 12 34 56 78</p>
+            <address className="not-italic text-gray-600 space-y-2">
+              <div className="flex items-center">
+                <MapPin size={18} className="mr-2 text-garden-medium-green flex-shrink-0" />
+                <p>Ceresbyen 14A, 1.2, 8200 Aarhus C</p>
+              </div>
+              <div className="flex items-center">
+                <Phone size={18} className="mr-2 text-garden-medium-green flex-shrink-0" />
+                <p>Telefon: 50 46 73 33</p>
+              </div>
+              <div className="flex items-center">
+                <Mail size={18} className="mr-2 text-garden-medium-green flex-shrink-0" />
+                <p>Email: info@mmhaekklipning.dk</p>
+              </div>
             </address>
           </div>
           

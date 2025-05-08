@@ -14,8 +14,48 @@ const About = () => {
         </div>
       </section>
       
-      {/* Our story */}
+      {/* Team Section */}
       <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="section-title text-center mb-12">Mød teamet</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <img 
+                  src="/lovable-uploads/6ece2c27-eff0-4ea1-b89f-e1716f167b14.png"
+                  alt="Lasse og Casper" 
+                  className="w-full h-64 object-cover rounded-lg mb-6"
+                />
+                <h3 className="text-xl font-bold text-garden-dark-green mb-2">Lasse Maagaard & Casper Maigaard</h3>
+                <p className="text-gray-700">
+                  Vi er to engagerede unge, der begge starter på studie efter sommeren. Vi ønsker at bruge sommeren udendørs – med at klippe din hæk.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <img 
+                    src="/lovable-uploads/30899dc4-9309-4f00-a0dd-aec08c69c14c.png"
+                    alt="Hækklipning i aktion" 
+                    className="w-full h-[180px] object-cover rounded-lg"
+                  />
+                  <img 
+                    src="/lovable-uploads/032ca28e-bdf6-4cb5-b8a5-57da19275d8d.png"
+                    alt="Professionelt arbejde" 
+                    className="w-full h-[180px] object-cover rounded-lg"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-garden-dark-green mb-2">Vores erfaring</h3>
+                <p className="text-gray-700">
+                  Vi har solid erfaring med hækklipning og går op i at levere et skarpt og grundigt resultat hver gang. Med vores professionelle tilgang sikrer vi, at din have altid ser velplejet ud.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our story */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="section-title text-center">Vores historie</h2>
@@ -35,6 +75,63 @@ const About = () => {
                 smukke udeområder til vores kunder. Når du vælger M&M's Hækklipning, får du ikke blot 
                 en professionel service – du får et team, der virkelig går op i detaljerne.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Services */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="section-title text-center mb-12">Vi tilbyder</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-garden-light-green/10 p-6 rounded-lg">
+                <h3 className="text-xl font-bold text-garden-dark-green mb-4">Vores services</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="bg-garden-medium-green text-white p-1 rounded-full mr-3 mt-1">✓</span>
+                    <span>Hækklipning af høj kvalitet</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="bg-garden-medium-green text-white p-1 rounded-full mr-3 mt-1">✓</span>
+                    <span>Bortskaffelse af hækaffald (+199kr)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="bg-garden-medium-green text-white p-1 rounded-full mr-3 mt-1">✓</span>
+                    <span>Vi klipper i ugerne 20-35</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-garden-light-green/10 p-6 rounded-lg">
+                <h3 className="text-xl font-bold text-garden-dark-green mb-4">Vores fordele</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="bg-garden-medium-green text-white p-1 rounded-full mr-3 mt-1">✓</span>
+                    <span>10% rabat hvis man skaffer en ny kunde</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="bg-garden-medium-green text-white p-1 rounded-full mr-3 mt-1">✓</span>
+                    <span>Markedets bedste priser</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="bg-garden-medium-green text-white p-1 rounded-full mr-3 mt-1">✓</span>
+                    <span>Tilfredshedsgaranti og prisgaranti</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="mt-12 text-center">
+              <div className="bg-yellow-300 inline-block text-garden-dark-green font-bold py-2 px-6 rounded-full mb-6">
+                OPSTARTSTILBUD
+              </div>
+              <p className="text-lg mb-6">
+                Tag kontakt til os i dag for at høre mere om vores særlige opstartstilbud!
+              </p>
+              <Link to="/kontakt" className="cta-button inline-block">
+                Få et tilbud
+              </Link>
             </div>
           </div>
         </div>

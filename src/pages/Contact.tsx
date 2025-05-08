@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -19,6 +20,7 @@ const Contact = () => {
     { value: "hækklipning", label: "Hækklipning" },
     { value: "beskæring", label: "Beskæring af buske" },
     { value: "begge", label: "Både hækklipning og beskæring" },
+    { value: "affald", label: "Bortskaffelse af hækaffald" },
     { value: "andet", label: "Andet (beskriv i beskedfeltet)" }
   ];
   
@@ -80,6 +82,14 @@ const Contact = () => {
             <h2 className="text-2xl font-bold text-garden-dark-green mb-6 text-center">
               Indsend din forespørgsel
             </h2>
+            <div className="mb-8 text-center">
+              <div className="bg-yellow-300 text-garden-dark-green font-bold py-2 px-4 rounded-full inline-block mb-4">
+                OPSTARTSTILBUD
+              </div>
+              <p className="text-gray-700">
+                Send venligst en mail med din adresse og eventuelle ønsker for hækklipningen
+              </p>
+            </div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -219,20 +229,55 @@ const Contact = () => {
       {/* Contact Info */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-garden-dark-green mb-6">
-              Foretrækker du at ringe?
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold text-garden-dark-green mb-6 text-center">
+              Kontaktinformation
             </h2>
-            <p className="text-lg text-gray-700 mb-4">
-              Du er altid velkommen til at kontakte os direkte på:
-            </p>
-            <p className="text-2xl font-bold text-garden-medium-green mb-8">
-              +45 12 34 56 78
-            </p>
-            <p className="text-gray-600">
-              Vi er tilgængelige mandag til fredag fra 8:00 til 18:00<br />
-              og lørdag fra 9:00 til 15:00.
-            </p>
+            
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="bg-garden-medium-green rounded-full p-3">
+                      <Phone className="text-white" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-garden-dark-green">Telefon</h3>
+                      <p className="text-gray-700">50 46 73 33</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="bg-garden-medium-green rounded-full p-3">
+                      <Mail className="text-white" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-garden-dark-green">Email</h3>
+                      <p className="text-gray-700">info@mmhaekklipning.dk</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <div className="flex items-center space-x-4">
+                    <div className="bg-garden-medium-green rounded-full p-3">
+                      <MapPin className="text-white" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-garden-dark-green">Adresse</h3>
+                      <p className="text-gray-700">Ceresbyen 14A, 1.2<br/>8200 Aarhus C</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-8 pt-8 border-t border-gray-200 text-center">
+                <p className="text-gray-700">
+                  Vi er tilgængelige for opgaver i ugerne 20-35.<br/>
+                  Kontakt os gerne for mere information eller et uforpligtende tilbud.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
