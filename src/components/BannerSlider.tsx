@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -27,7 +26,7 @@ const slides = [
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&h=600&q=80",
     alt: "Velplejet hæk",
     title: "Gør din have smuk",
     description: "Løft udseendet på din have med vores professionelle service",
