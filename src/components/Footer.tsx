@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import { Phone, Mail, MapPin } from "lucide-react";
@@ -32,7 +33,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail size={18} className="mr-2 text-garden-medium-green flex-shrink-0" />
-                <p>Email: info@mmhaekklipning.dk</p>
+                <p>Email: MogMs.Haekklipning@gmail.com</p>
               </div>
             </address>
           </div>

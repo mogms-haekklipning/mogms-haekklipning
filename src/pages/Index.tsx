@@ -34,25 +34,6 @@ const Index = () => {
     "Prisgaranti"
   ];
 
-  const offerBox = () => (
-    <div className="bg-white p-8 rounded-lg shadow-xl border-2 border-garden-medium-green max-w-md mx-auto mt-8 mb-12">
-      <div className="text-center">
-        <div className="bg-yellow-300 text-garden-dark-green font-bold py-2 px-4 rounded-full inline-block mb-4">
-          OPSTARTSTILBUD
-        </div>
-        <h3 className="text-2xl font-bold text-garden-dark-green mb-4">Book os nu!</h3>
-        <p className="mb-4">Send venligst en mail med følgende oplysninger:</p>
-        <ul className="text-left list-disc list-inside mb-6">
-          <li>Din adresse</li>
-          <li>Eventuelle ønsker for hækklipningen</li>
-        </ul>
-        <Link to="/kontakt" className="cta-button inline-block">
-          Kontakt os i dag
-        </Link>
-      </div>
-    </div>
-  );
-
   return (
     <div>
       {/* Hero Banner */}
@@ -73,8 +54,6 @@ const Index = () => {
               Kontakt os i dag
             </Link>
           </div>
-          
-          {offerBox()}
         </div>
       </section>
       

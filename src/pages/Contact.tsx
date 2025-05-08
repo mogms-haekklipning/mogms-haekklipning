@@ -82,14 +82,6 @@ const Contact = () => {
             <h2 className="text-2xl font-bold text-garden-dark-green mb-6 text-center">
               Indsend din forespørgsel
             </h2>
-            <div className="mb-8 text-center">
-              <div className="bg-yellow-300 text-garden-dark-green font-bold py-2 px-4 rounded-full inline-block mb-4">
-                OPSTARTSTILBUD
-              </div>
-              <p className="text-gray-700">
-                Send venligst en mail med din adresse og eventuelle ønsker for hækklipningen
-              </p>
-            </div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -253,7 +245,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-garden-dark-green">Email</h3>
-                      <p className="text-gray-700">info@mmhaekklipning.dk</p>
+                      <p className="text-gray-700">MogMs.Haekklipning@gmail.com</p>
                     </div>
                   </div>
                 </div>
