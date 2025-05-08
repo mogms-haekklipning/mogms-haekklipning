@@ -4,7 +4,7 @@ const Logo = () => {
     <div className="flex items-center space-x-2">
       <div className="relative">
         <img 
-          src="/lovable-uploads/89554f3c-fe5b-4f02-bc71-c17681b95f2d.png" 
+          src="/lovable-uploads/c38a7e1d-8123-45f0-9af7-5b7b91182d06.png" 
           alt="M&Ms Hækklipning Logo" 
           className="h-12 w-auto"
         />
