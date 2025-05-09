@@ -9,19 +9,20 @@ const Index = () => {
       id: 1,
       title: "Hækklipning",
       description: "Vi klipper alle typer af hække med præcision og øje for detaljen.",
-      imageUrl: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      imageUrl: "/lovable-uploads/65a98916-440d-4757-b6e8-6068004a612c.png"
     },
     {
       id: 2,
-      title: "Beskæring",
-      description: "Vi tilbyder professionel beskæring af buske og mindre træer.",
-      imageUrl: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      title: "Pris",
+      description: "27 kr. pr. meter hæk - professionel klipning til konkurrencedygtig pris.",
+      imageUrl: "/lovable-uploads/8ac280c6-9245-45a0-ade4-08760044e426.png",
+      discount: "20% rabat hvis bestilt inden 1/6"
     },
     {
       id: 3,
-      title: "Oprydning",
-      description: "Efter arbejdet rydder vi grundigt op, så din have står flot tilbage.",
-      imageUrl: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      title: "Bortskaffelse",
+      description: "Vi fjerner hækaffald efter klipning for kun 199 DKK.",
+      imageUrl: "/lovable-uploads/3c756104-68f2-4f25-b587-002d6defcec8.png"
     }
   ];
 
@@ -50,9 +51,21 @@ const Index = () => {
             <p className="text-lg text-gray-700 mb-8">
               Hækklipningssæsonen begynder snart. Lad os klippe din hæk skarp, så den ligner en milliard.
             </p>
-            <Link to="/kontakt" className="cta-button inline-block">
-              Kontakt os i dag
-            </Link>
+            
+            {/* Added promotional circle */}
+            <div className="mb-8 relative inline-block">
+              <div className="bg-yellow-300 rounded-full w-40 h-40 flex flex-col items-center justify-center transform hover:scale-105 transition-transform">
+                <span className="font-bold text-xl text-garden-dark-green">OPSTARTSTILBUD</span>
+                <span className="font-bold text-3xl text-garden-dark-green">20%</span>
+                <span className="text-sm text-garden-dark-green text-center px-2">hvis bestilt inden 1/6</span>
+              </div>
+            </div>
+            
+            <div className="clear-both">
+              <Link to="/kontakt" className="cta-button inline-block">
+                Kontakt os i dag
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -75,7 +88,7 @@ const Index = () => {
             </div>
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                src="/lovable-uploads/f122d11c-34c0-4f39-8c46-4de3f97a3e28.png"
                 alt="Vores arbejde" 
                 className="w-full h-64 object-cover"
               />
@@ -103,6 +116,13 @@ const Index = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-garden-dark-green mb-3">{service.title}</h3>
                   <p className="text-gray-600">{service.description}</p>
+                  
+                  {/* Special discount box for price */}
+                  {service.discount && (
+                    <div className="mt-4 bg-yellow-300 p-2 rounded-md">
+                      <p className="text-garden-dark-green font-bold text-center">{service.discount}</p>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -145,6 +165,9 @@ const Index = () => {
           <Link to="/kontakt" className="cta-button inline-block">
             Få en skarp hæk - Book nu
           </Link>
+          <div className="mt-8 bg-yellow-300 inline-block text-garden-dark-green font-bold py-2 px-6 rounded-full">
+            <p>OPSTARTSTILBUD - 20% RABAT ved bestilling inden 1/6</p>
+          </div>
         </div>
       </section>
     </div>

@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -18,7 +19,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="section-title text-center mb-12">Mød teamet</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="grid grid-cols-1 gap-8 mb-12">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <img 
                   src="/lovable-uploads/6ece2c27-eff0-4ea1-b89f-e1716f167b14.png"
@@ -29,12 +30,24 @@ const About = () => {
                 <p className="text-gray-700">
                   Vi er to engagerede unge, der begge starter på studie efter sommeren. Vi ønsker at bruge sommeren udendørs – med at klippe din hæk.
                 </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-garden-dark-green mb-2">Vores erfaring</h3>
-                <p className="text-gray-700">
-                  Vi har solid erfaring med hækklipning og går op i at levere et skarpt og grundigt resultat hver gang. Med vores professionelle tilgang sikrer vi, at din have altid ser velplejet ud.
-                </p>
+                
+                <div className="mt-8">
+                  <h3 className="text-xl font-bold text-garden-dark-green mb-2">Vores erfaring</h3>
+                  <div className="flex flex-col md:flex-row gap-8 items-start">
+                    <div className="md:w-1/2">
+                      <img 
+                        src="/lovable-uploads/7bb62461-550d-4bad-a592-9257e10cef75.png"
+                        alt="Vores erfaring med hækklipning" 
+                        className="w-full rounded-lg object-cover mb-4"
+                      />
+                    </div>
+                    <div className="md:w-1/2">
+                      <p className="text-gray-700">
+                        Vi har solid erfaring med hækklipning og går op i at levere et skarpt og grundigt resultat hver gang. Med vores professionelle tilgang sikrer vi, at din have altid ser velplejet ud.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -111,10 +124,10 @@ const About = () => {
             
             <div className="mt-12 text-center">
               <div className="bg-yellow-300 inline-block text-garden-dark-green font-bold py-2 px-6 rounded-full mb-6">
-                OPSTARTSTILBUD
+                OPSTARTSTILBUD - 20% RABAT
               </div>
               <p className="text-lg mb-6">
-                Tag kontakt til os i dag for at høre mere om vores særlige opstartstilbud!
+                Tag kontakt til os i dag for at høre mere om vores særlige opstartstilbud ved bestilling inden 1/6!
               </p>
               <Link to="/kontakt" className="cta-button inline-block">
                 Få et tilbud
