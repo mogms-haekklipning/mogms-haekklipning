@@ -15,13 +15,13 @@ const Index = () => {
       id: 2,
       title: "Beskæring",
       description: "Vi tilbyder professionel beskæring af buske og mindre træer.",
-      imageUrl: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 3,
       title: "Oprydning",
       description: "Efter arbejdet rydder vi grundigt op, så din have står flot tilbage.",
-      imageUrl: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     }
   ];
 
@@ -75,7 +75,7 @@ const Index = () => {
             </div>
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="/lovable-uploads/032ca28e-bdf6-4cb5-b8a5-57da19275d8d.png"
+                src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                 alt="Vores arbejde" 
                 className="w-full h-64 object-cover"
               />

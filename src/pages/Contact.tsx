@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Phone, Mail } from "lucide-react";
@@ -10,28 +9,8 @@ const Contact = () => {
     address: "",
     email: "",
     phone: "",
-    service: "",
-    budget: "",
     message: ""
   });
-  
-  const serviceOptions = [
-    { value: "", label: "Vælg service" },
-    { value: "hækklipning", label: "Hækklipning" },
-    { value: "beskæring", label: "Beskæring af buske" },
-    { value: "begge", label: "Både hækklipning og beskæring" },
-    { value: "affald", label: "Bortskaffelse af hækaffald" },
-    { value: "andet", label: "Andet (beskriv i beskedfeltet)" }
-  ];
-  
-  const budgetOptions = [
-    { value: "", label: "Vælg budget" },
-    { value: "under1000", label: "Under 1.000 kr." },
-    { value: "1000-3000", label: "1.000 - 3.000 kr." },
-    { value: "3000-5000", label: "3.000 - 5.000 kr." },
-    { value: "over5000", label: "Over 5.000 kr." },
-    { value: "ved-ikke", label: "Ved ikke" }
-  ];
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -57,8 +36,6 @@ const Contact = () => {
       address: "",
       email: "",
       phone: "",
-      service: "",
-      budget: "",
       message: ""
     });
   };
@@ -82,6 +59,9 @@ const Contact = () => {
             <h2 className="text-2xl font-bold text-garden-dark-green mb-6 text-center">
               Indsend din forespørgsel
             </h2>
+            <p className="text-center text-gray-700 mb-6">
+              Skriv din adresse og så sender vi hurtigst muligt en pris
+            </p>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -146,46 +126,6 @@ const Contact = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-garden-medium-green"
                     placeholder="Dit telefonnummer"
                   />
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="service" className="block text-gray-700 font-medium mb-2">
-                    Service *
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-garden-medium-green appearance-none bg-white"
-                  >
-                    {serviceOptions.map(option => (
-                      <option key={option.value} value={option.value}>
-                        {option.label}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <div>
-                  <label htmlFor="budget" className="block text-gray-700 font-medium mb-2">
-                    Budget
-                  </label>
-                  <select
-                    id="budget"
-                    name="budget"
-                    value={formData.budget}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-garden-medium-green appearance-none bg-white"
-                  >
-                    {budgetOptions.map(option => (
-                      <option key={option.value} value={option.value}>
-                        {option.label}
-                      </option>
-                    ))}
-                  </select>
                 </div>
               </div>
               

@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -32,18 +31,6 @@ const About = () => {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <img 
-                    src="/lovable-uploads/30899dc4-9309-4f00-a0dd-aec08c69c14c.png"
-                    alt="Hækklipning i aktion" 
-                    className="w-full h-[180px] object-cover rounded-lg"
-                  />
-                  <img 
-                    src="/lovable-uploads/032ca28e-bdf6-4cb5-b8a5-57da19275d8d.png"
-                    alt="Professionelt arbejde" 
-                    className="w-full h-[180px] object-cover rounded-lg"
-                  />
-                </div>
                 <h3 className="text-xl font-bold text-garden-dark-green mb-2">Vores erfaring</h3>
                 <p className="text-gray-700">
                   Vi har solid erfaring med hækklipning og går op i at levere et skarpt og grundigt resultat hver gang. Med vores professionelle tilgang sikrer vi, at din have altid ser velplejet ud.
